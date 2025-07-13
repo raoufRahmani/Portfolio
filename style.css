@@ -100,3 +100,165 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
+/* style.css additions for experience.html */
+
+body {
+  background-color: #121c2b;
+  color: #e0e6f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e2a3a;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #5dade2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main.content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #5dade2;
+}
+
+.experience-item {
+  background-color: #1e2a3a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.experience-item h2 {
+  margin-top: 0;
+  color: #a3c1e8;
+}
+
+.experience-item ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  line-height: 1.6;
+}
+
+.experience-logo {
+  display: block;
+  max-width: 150px;
+  margin-top: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1e2a3a;
+  color: #708090;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+/* style.css additions for projects.html */
+
+body {
+  background-color: #121c2b;
+  color: #e0e6f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e2a3a;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #5dade2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main.content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #5dade2;
+}
+
+.project-item {
+  background-color: #1e2a3a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-item h2 {
+  margin-top: 0;
+  color: #a3c1e8;
+}
+
+.project-item p {
+  line-height: 1.6;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.project-item a {
+  color: #5dade2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1e2a3a;
+  color: #708090;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}

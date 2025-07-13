@@ -4,7 +4,93 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects - Abderraouf Rahmani</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e2f;
+      color: #dcdde1;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    header nav ul {
+      display: flex;
+      list-style: none;
+      margin-bottom: 30px;
+      background: #273c75;
+      padding: 10px;
+      border-radius: 8px;
+      justify-content: center;
+      gap: 20px;
+    }
+    header nav ul li a {
+      color: #f5f6fa;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    header nav ul li a.active,
+    header nav ul li a:hover {
+      background: #44bd32;
+      color: white;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #44bd32;
+    }
+    .project-item {
+      background: #2f3640;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    .project-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 10px rgba(68, 189, 50, 0.7);
+    }
+    .section-title {
+      color: #00a8ff;
+      margin: 15px 0 8px;
+      font-weight: 700;
+      border-bottom: 2px solid #00a8ff;
+      padding-bottom: 5px;
+      font-size: 1.1rem;
+    }
+    p {
+      margin-bottom: 12px;
+      color: #dcdde1;
+    }
+    a.github-link {
+      color: #44bd32;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a.github-link:hover {
+      color: #00a8ff;
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #718093;
+      font-size: 0.9rem;
+      margin-top: 60px;
+      border-top: 1px solid #353b48;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,19 +107,57 @@
     <h1>Projects</h1>
 
     <section class="project-item">
+      <img src="house.jpg" alt="Paris Houses Project" />
       <h2>Paris House Price Prediction</h2>
+      
+      <div class="section-title">Objective</div>
       <p>
-        This project analyzes the effect of house features such as number of rooms and surface area on property prices in Paris. Using econometric modeling and machine learning (ExtraTreesRegressor), it improves prediction accuracy based on real transaction data from the DVF dataset.
+        Study the effect of features like number of rooms and surface area on house prices in Paris using multiple linear regression and improve predictions with ExtraTreesRegressor.
       </p>
-      <p><a href="https://github.com/raoufRahmani/Paris_houses_price_prediction" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+
+      <div class="section-title">Dataset Description</div>
+      <p>
+        Uses the DVF dataset from French public finance, containing detailed real estate transaction data across Paris.
+      </p>
+
+      <div class="section-title">Exploratory Data Analysis</div>
+      <p>
+        Checking missing values, data types, visualizing distributions, and analyzing the number of main rooms.
+      </p>
+
+      <div class="section-title">Modeling</div>
+      <p>
+        Estimated econometric models, interpreted regression results, then enhanced price prediction with ExtraTreesRegressor assessing variable importance.
+      </p>
+
+      <p><a href="https://github.com/raoufRahmani/Paris_houses_price_prediction" target="_blank" rel="noopener noreferrer" class="github-link">View on GitHub</a></p>
     </section>
 
     <section class="project-item">
-      <h2>Used Cars Price Prediction</h2>
+      <img src="cars.jpeg" alt="Used Cars Project" />
+      <h2>Used Cars Market in France — Analysis and Price Prediction</h2>
+      
+      <div class="section-title">Overview</div>
       <p>
-        This project explores the used car market in France through deep exploratory data analysis. A machine learning model (XGBoost Regressor) is developed to predict car prices using features like brand, mileage, age, and others scraped from major car websites.
+        Analyzed used cars market in France via deep exploratory data analysis on a dataset scraped from major websites, followed by price prediction using XGBoost Regressor.
       </p>
-      <p><a href="https://github.com/raoufRahmani/Cars_Prediction_model/tree/master" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+
+      <div class="section-title">Data Cleaning and Preparation</div>
+      <p>
+        Removed unwanted characters (/, €), converted columns to correct types, handled missing values, and ensured dataset consistency.
+      </p>
+
+      <div class="section-title">Exploratory Data Analysis</div>
+      <p>
+        Investigated popular brands and models, impact of mileage and age on price, and variations by fuel type and gearbox.
+      </p>
+
+      <div class="section-title">Machine Learning Model</div>
+      <p>
+        Built a regression model with XGBoost and used OneHotEncoding for categorical features. The model offers reasonable price predictions and insights on feature importance.
+      </p>
+
+      <p><a href="https://github.com/raoufRahmani/Cars_Prediction_model/tree/master" target="_blank" rel="noopener noreferrer" class="github-link">View on GitHub</a></p>
     </section>
   </main>
 
