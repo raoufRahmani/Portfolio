@@ -1,4 +1,4 @@
-/* General Reset */
+/* ===== General Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -10,50 +10,57 @@ body {
   background-color: #0f172a; /* Dark Blue-Gray */
   color: #f1f5f9; /* Light Gray */
   line-height: 1.6;
+  min-height: 100vh;
   padding-bottom: 60px;
 }
 
+/* ===== Container ===== */
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem;
 }
 
-/* Header */
+/* ===== Header ===== */
 .header {
   background-color: #1e293b; /* Slightly lighter than body */
   padding: 1rem 2rem;
   border-bottom: 1px solid #334155;
+  text-align: center; /* Center all content */
 }
 
 .site-title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #f8fafc;
+  margin-bottom: 0.5rem;
 }
 
 .navbar {
-  margin-top: 0.5rem;
   display: flex;
-  gap: 1.5rem;
+  justify-content: center; /* Center links horizontally */
   flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .navbar a {
   color: #cbd5e1;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .navbar a:hover,
 .navbar a.active {
   color: #38bdf8; /* Light Blue */
+  background-color: #334155;
 }
 
-/* Section */
+/* ===== Section ===== */
 .studies-section {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .section-title {
@@ -63,34 +70,35 @@ body {
   padding-left: 0.75rem;
 }
 
-/* Study Items */
+/* ===== Study Items ===== */
 .study-item {
   display: flex;
   align-items: center;
   background-color: #1e293b;
-  padding: 1.2rem;
+  padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .study-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
 }
 
 .study-logo {
   width: 60px;
   height: 60px;
   object-fit: contain;
-  margin-right: 1.2rem;
+  margin-right: 1.5rem;
   border-radius: 8px;
   background-color: #f8fafc;
   padding: 5px;
 }
 
 .study-details h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #f1f5f9;
 }
 
@@ -106,7 +114,7 @@ body {
   margin-top: 2px;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 .footer {
   text-align: center;
   color: #64748b;
@@ -114,4 +122,20 @@ body {
   margin-top: 3rem;
   border-top: 1px solid #334155;
   padding: 1rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .study-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .study-logo {
+    margin-bottom: 0.8rem;
+  }
+
+  .navbar {
+    gap: 1rem;
+  }
 }
