@@ -103,16 +103,13 @@ body {
   padding: 1.5rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
-
-  /* Cadre bleu */
-  border: 2px solid #38bdf8;
-
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .study-item:hover {
   transform: translateY(-5px);
-  border-color: #34d399; /* vert au survol */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
 }
 
 .study-logo {
